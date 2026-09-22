@@ -1,13 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover Al-Jouf</title>
+</head>
+
+<body>
+
+    
+    <header>
+        <nav id="navbar">
+            <div class="nav-container">
+                <a class="logo" href="#home">AL-JOUF</a>
+
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#attractions">Attractions</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#culture">Culture</a>
+                    <a href="#visit">Visit</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1>Discover Al-Jouf</h1>
+
+            <p>
+                Explore the history, landscapes, and culture of
+                one of Saudi Arabia's most distinctive regions.
+            </p>
+
+            <a href="#about" class="button">Explore Al-Jouf</a>
+        </div>
+    </section>
+
+
+    
+    <section id="about" class="section">
+        <div class="content">
+            <h2>About Al-Jouf</h2>
+
+            <p>
+                Al-Jouf is a region in northern Saudi Arabia known for
+                its historical sites, agricultural landscapes, and rich
+                cultural heritage.
+            </p>
+        </div>
+    </section>
+
+
+    
+    <section id="attractions" class="section">
+        <div class="content">
+            <h2>Explore Al-Jouf</h2>
+
+            <div class="attraction-grid">
+
+                <article class="attraction-card">
+                    <h3>Marid Castle</h3>
+                    <p>
+                        Discover one of the most recognizable historical
+                        landmarks in Dumat Al-Jandal.
+                    </p>
+                    <button class="modal-button" data-modal="marid-modal">Learn More</button>
+                </article>
+
+                <article class="attraction-card">
+                    <h3>Dumat Al-Jandal</h3>
+                    <p>
+                        Explore the history and heritage of one of the
+                        region's most famous ancient settlements.
+                    </p>
+                    <button class="modal-button" data-modal="dumat-modal">Learn More</button>
+                </article>
+
+                <article class="attraction-card">
+                    <h3>Al-Jouf Olive Farms</h3>
+                    <p>
+                        Experience the agricultural landscape and olive
+                        cultivation for which Al-Jouf is well known.
+                    </p>
+                    <button class="modal-button" data-modal="olive-modal">Learn More</button>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="marid-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+
+            <h2>Marid Castle</h2>
+
+            <p>
+                Marid Castle is one of the most recognizable historical
+                landmarks in Al-Jouf. The castle overlooks the historic
+                area of Dumat Al-Jandal and reflects the region's long history.
+            </p>
+        </div>
+    </div>
+
+
+    
+    <div id="dumat-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+
+            <h2>Dumat Al-Jandal</h2>
+
+            <p>
+                Dumat Al-Jandal is a historic city in Al-Jouf with ancient
+                landmarks and archaeological significance. It is home to
+                several important heritage sites in the region.
+            </p>
+        </div>
+    </div>
+
+
+    
+    <div id="olive-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+
+            <h2>Al-Jouf Olive Farms</h2>
+
+            <p>
+                Olive cultivation is an important part of agriculture in
+                Al-Jouf. Large olive farms across the region contribute to
+                its distinctive agricultural landscape.
+            </p>
+        </div>
+    </div>
+
+
+    
+    <section id="gallery" class="section">
+        <div class="content">
+
+            <h2>Explore Al-Jouf</h2>
+
+            <p>
+            Discover some of the landscapes and landmarks
+            that make Al-Jouf unique.
+            </p>
+
+            <div class="carousel">
+
+                <div class="carousel-slide active-slide">
+                    <img src="assets/marid_jouf.png" alt="Marid Castle">
+                    <div class="slide-caption">
+                        <h3>Marid Castle</h3>
+                        <p>A historic landmark overlooking Dumat Al-Jandal.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/dumat_jouf.png" alt="Dumat Al-Jandal Lake">
+                    <div class="slide-caption">
+                        <h3>Dumat Al-Jandal Lake</h3>
+                        <p>One of the distinctive landscapes of Al-Jouf.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/farms_jouf.png" alt="Al-Jouf Olive Farms">
+                    <div class="slide-caption">
+                        <h3>Olive Farms</h3>
+                        <p>
+                            Olive cultivation is an important part of
+                            Al-Jouf's agricultural identity.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="carousel-button previous" aria-label="Previous slide">
+                    &#10094;
+                </button>
+
+                <button class="carousel-button next" aria-label="Next slide">
+                    &#10095;
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <section id="video" class="section video-section">
+        <div class="content">
+
+            <h2>Experience Al-Jouf</h2>
+
+            <p>
+                Take a closer look at the landscapes, heritage,
+                and atmosphere of Al-Jouf.
+            </p>
+
+            <div class="video-container">
+                <video controls>
+                    <source src="assets/jouf_vid.mov" type="video/quicktime">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <section id="culture" class="section">
+        <div class="content">
+            <h2>Culture & Heritage</h2>
+
+            <p>
+                Learn about the history, traditions, agriculture, and
+                heritage that have shaped Al-Jouf.
+            </p>
+        </div>
+    </section>
+
+
+    
+    <section id="visit" class="section">
+        <div class="content">
+
+            <h2>Discover More</h2>
+
+            <p>
+                Explore more about Al-Jouf and discover its history,
+                landscapes, agriculture, and culture.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="https://www.instagram.com/" 
+                    class="social-icon instagram"
+                    target="_blank"
+                    aria-label="Instagram">
+                </a>
+
+                <a href="https://www.youtube.com/"
+                    class="social-icon youtube"
+                    target="_blank"
+                    aria-label="YouTube">
+                </a>
+
+                <a href="https://x.com/"
+                    class="social-icon twitter"
+                    target="_blank"
+                    aria-label="X">
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <p>Discover Al-Jouf</p>
+    </footer>
+
+</body>
+
 </html>
